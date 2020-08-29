@@ -28,7 +28,22 @@ O(n)
 TODO
 
 - [PHP](./PHP)
-- JavaScript
 - Go
-- Java
-- Python  
+- [Java](./Java)
+- Python
+
+## Possible functions
+- size() - returns number of data elements in list
+- empty() - bool returns true if empty
+- value_at(index) - returns the value of the nth item (starting at 0 for first)
+- prepend(value) - adds an item to the front of the list
+- pop_front() - remove front item and return its value
+- append(value) - adds an item at the end
+- pop_back() - removes end item and returns its value
+- front() - get value of front item
+- back() - get value of end item
+- insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
+- erase(index) - removes node at given index
+- value_n_from_end(n) - returns the value of the node at nth position from the end of the list
+- reverse() - reverses the list
+- delete_with_value(value) - removes the first item in the list with this value
