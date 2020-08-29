@@ -50,13 +50,12 @@ public class SinglyLinkedList {
     }
 
     public void display() {
-        Node current = head;
-
         if(head == null) {
             System.out.println("[]");
             return;
         }
 
+        Node current = head;
         System.out.println("[");
         while(current != null) {
             System.out.println("\t" + current.data);
