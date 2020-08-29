@@ -5,114 +5,130 @@ include '../../../helpers/PHP/helpers.php';
 class Node
 {
     public $data;
-    public $next;
+    public $next = null;
 
     public function __construct($data)
     {
         $this->data = $data;
-        $this->next = null;
     }
 }
 
 class LinkedList
 {
-    public $head;
+    public $head = null;
 
-    public function __construct()
+    public function append($data)
     {
-        $this->head = null;
-    }
-
-    public function display()
-    {
-        $node = $this->head;
-        $count = 0;
-        while ($node !== null) {
-            println('- Node data: ' . $node->data);
-            $node = $node->next;
-            $count++;
-        }
-        println('-- Node count: ' . $count);
-        println('');
-    }
-
-    public function insert($data)
-    {
-        $node = $this->head;
-        
-        if ($node === null) {
+        if ($this->head === null) {
             $this->head = new Node($data);
             return true;
         }
         
+        $node = $this->head;
         while ($node->next !== null) {
             $node = $node->next;
         }
         $node->next = new Node($data);
     }
 
-    public function delete($data)
+    public function prepend($data)
     {
-        $node = $this->head;
+        $newHead = new Node($data);
+        $newHead->next = $this->head;
+        $this->head = $newHead;
+    }
 
-        // Empty list
-        if ($node === null) {
+    public function deleteWithValue($data)
+    {
+        if ($this->head === null) {
             return false;
         }
 
-        // Head should be deleted
-        if ($node->data === $data) {
-            if ($node->next === null) {
-                $this->head = null;
-            } else {
-                $this->head = $node->next;
-            }
+        if ($this->head->data === $data) {
+            $this->head = $this->head->next;
             return true;
         }
-        
-        // Search for the value
-        $parent = $node;
-        while ($node !== null) {
-            if ($node->data === $data) {
-                $parent->next = $node->next;
+
+        $node = $this->head;
+        while ($node->next !== null) {
+            if ($node->next->data === $data) {
+                $node->next = $node->next->next;
                 return true;
             }
-            $parent = $node;
             $node = $node->next;
         }
-
         return false;
+    }
+
+    public function display()
+    {
+        $node = $this->head;
+        $count = 0;
+
+        if ($node !== null) {
+            while ($node !== null) {
+                println('- Node data: ' . $node->data);
+                $node = $node->next;
+                $count++;
+            }
+        }
+        println('-- Node count: ' . $count);
+        println('');
     }
 }
 
-//======================================================================
-// TESTS
-//======================================================================
-// Create linked list
+// Create list
 $linkedList = new LinkedList();
-
-// Print empty list
 $linkedList->display();
 linkedListAssertEqual('', $linkedList);
 
-// Insert nodes
-println("---------- INSERTS ----------");
-$linkedList->insert(42);
+// Append
+println("---------- Append ----------");
+$linkedList->append(42);
 $linkedList->display();
 linkedListAssertEqual('42', $linkedList);
-$linkedList->insert(51);
+
+$linkedList->append(51);
 $linkedList->display();
 linkedListAssertEqual('42,51', $linkedList);
 
-// Delete a node
-println("---------- DELETES ----------");
-$linkedList->delete(42);
-linkedListAssertEqual('51', $linkedList);
-$linkedList->delete(51);
-linkedListAssertEqual('', $linkedList);
+$linkedList->append(11);
+$linkedList->append(455);
+$linkedList->display();
+linkedListAssertEqual('42,51,11,455', $linkedList);
 
-$linkedList->insert(1);
-$linkedList->insert(2);
-$linkedList->insert(3);
-$linkedList->delete(2);
-linkedListAssertEqual('1,3', $linkedList);
+// Prepend
+println("---------- Prepend ----------");
+$linkedList = new LinkedList();
+$linkedList->prepend(42);
+$linkedList->display();
+linkedListAssertEqual('42', $linkedList);
+
+$linkedList->prepend(51);
+$linkedList->display();
+linkedListAssertEqual('51,42', $linkedList);
+
+$linkedList->prepend(11);
+$linkedList->prepend(455);
+$linkedList->display();
+linkedListAssertEqual('455,11,51,42', $linkedList);
+
+// Delete with value
+println("---------- Delete with value ----------");
+$linkedList = new LinkedList();
+$linkedList->append(42);
+$linkedList->append(51);
+$linkedList->append(11);
+$linkedList->append(455);
+
+$linkedList->deleteWithValue(11);
+$linkedList->display();
+linkedListAssertEqual('42,51,455', $linkedList);
+
+$linkedList->deleteWithValue(455);
+$linkedList->display();
+linkedListAssertEqual('42,51', $linkedList);
+
+$linkedList->deleteWithValue(42);
+$linkedList->display();
+linkedListAssertEqual('51', $linkedList);
