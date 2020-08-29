@@ -1,4 +1,3 @@
-// "static void main" must be defined in a public class.
 public class SinglyLinkedList {
     public class Node {
         int data;
@@ -50,14 +49,14 @@ public class SinglyLinkedList {
     }
 
     public void display() {
-        if(head == null) {
+        if (head == null) {
             System.out.println("[]");
             return;
         }
 
         Node current = head;
         System.out.println("[");
-        while(current != null) {
+        while (current != null) {
             System.out.println("\t" + current.data);
             current = current.next;
         }
