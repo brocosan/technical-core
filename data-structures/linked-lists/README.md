@@ -25,12 +25,9 @@ A linked list has a number of useful applications:
 O(n)
 
 ## Implementations
-TODO
-
 - [PHP](./PHP)
-- Go
+- [Go](./Go)
 - [Java](./Java)
-- Python
 
 ## Possible functions
 - size() - returns number of data elements in list
