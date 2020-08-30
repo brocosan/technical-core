@@ -33,3 +33,22 @@ function linkedListAssertEqual($expected, $list)
 {
     assertEqual($expected, implode(',', linkedListToArray($list)));
 }
+
+//======================================================================
+// STACKS
+//======================================================================
+function stackToArray($stack)
+{
+    $array = [];
+    $node = $stack->top;
+    while ($node !== null) {
+        $array[] = $node->data;
+        $node = $node->next;
+    }
+    return $array;
+}
+
+function stackAssertEqual($expected, $list)
+{
+    assertEqual($expected, implode(',', stackToArray($list)));
+}
