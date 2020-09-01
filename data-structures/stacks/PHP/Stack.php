@@ -89,6 +89,10 @@ stackAssertEqual('455,11,51,42', $stack);
 // Pop
 println("---------- Pop ----------");
 $stack = new Stack();
+$pop = $stack->pop();
+stackAssertEqual('', $stack);
+assertEqual(null, $pop);
+
 $stack->push(42);
 $stack->push(51);
 $stack->push(11);
