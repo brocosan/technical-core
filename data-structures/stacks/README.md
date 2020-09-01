@@ -9,6 +9,12 @@ Operations:
 - top (return the top of the stack without removing it)
 - isEmpty
 
+There are two ways to implement a stack:
+- Using array
+- Using linked list
+
+&nbsp;
+
 ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
 ## Complexity
@@ -21,4 +27,4 @@ O(n)
 ## Implementations
 - [PHP](./PHP)
 - TODO: [Go](./Go)
-- TODO: [Java](./Java)
+- [Java](./Java)
