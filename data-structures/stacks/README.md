@@ -26,5 +26,5 @@ O(n)
 
 ## Implementations
 - [PHP](./PHP)
-- TODO: [Go](./Go)
+- [Go](./Go)
 - [Java](./Java)
