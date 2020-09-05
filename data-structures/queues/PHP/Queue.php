@@ -41,6 +41,9 @@ class Queue
 
         $head = $this->head->data;
         $this->head = $this->head->next;
+        if ($this->head === null) {
+            $this->tail = null;
+        }
         return $head;
     }
 
@@ -51,6 +54,15 @@ class Queue
         }
 
         return $this->head->data;
+    }
+
+    public function bottom()
+    {
+        if ($this->tail === null) {
+            return null;
+        }
+
+        return $this->tail->data;
     }
 
     public function isEmpty()
@@ -68,6 +80,8 @@ class Queue
             $count++;
         }
         println('-- Node count: ' . $count);
+        println('-- First in queue: ' . $this->top());
+        println('-- Last in queue: ' . $this->bottom());
         println('');
     }
 }
@@ -119,6 +133,7 @@ $dequeue = $queue->dequeue();
 assertEqual(455, $dequeue);
 
 $dequeue = $queue->dequeue();
+$queue->display();
 assertEqual(null, $dequeue);
 
 // Top
