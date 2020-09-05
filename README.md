@@ -6,3 +6,5 @@ Collection of data structures and algorithms in different languages.
 
 ## Data structures
 - [Linked lists](./data-structures/linked-lists/)
+- [Stacks](./data-structures/stacks/)
+- [Queues](./data-structures/queues/)
