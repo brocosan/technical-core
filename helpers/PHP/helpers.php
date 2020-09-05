@@ -52,3 +52,22 @@ function stackAssertEqual($expected, $list)
 {
     assertEqual($expected, implode(',', stackToArray($list)));
 }
+
+//======================================================================
+// QUEUES
+//======================================================================
+function queueToArray($queue)
+{
+    $array = [];
+    $node = $queue->head;
+    while ($node !== null) {
+        $array[] = $node->data;
+        $node = $node->next;
+    }
+    return $array;
+}
+
+function queueAssertEqual($expected, $list)
+{
+    assertEqual($expected, implode(',', queueToArray($list)));
+}
