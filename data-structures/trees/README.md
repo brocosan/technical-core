@@ -12,7 +12,7 @@ Non-linear data structures composed of nodes
 ![Tree](https://upload.wikimedia.org/wikipedia/commons/5/5f/Tree_%28computer_science%29.svg)
 
 ## Types of trees
-- Binary tree
+- [Binary tree](./binary-trees)
 - Binary search tree
 - Balanced tree
     - Red-black tree
