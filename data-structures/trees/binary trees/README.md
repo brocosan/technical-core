@@ -16,3 +16,15 @@ Every level is fully filled except for the last level. All nodes as left as poss
 
 **Perfect Binary Tree**  
 Both full and complete. All leafs are at the same level and this level has the maximum number of nodes.
+
+## Binary Tree Traversal
+Order to visit (often print) nodes. The most common is in-order.
+
+**In-Order Traversal**  
+Left branch, current node, right node.
+
+**Pre-Order Traversal**  
+Current node, left node, right node. The root is always the first node visited.
+
+**Post-Order**  
+Left node, right node, current node. The root is always the last node visited.

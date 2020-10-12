@@ -16,6 +16,39 @@ class Node
         $this->left = $left;
         $this->right = $right;
     }
+
+    public function printInOrder()
+    {
+        if ($this->left != null) {
+            $this->left->printInOrder();
+        }
+        echo $this->data . "\n";
+        if ($this->right != null) {
+            $this->right->printInOrder();
+        }
+    }
+
+    public function printPreOrder()
+    {
+        echo $this->data . "\n";
+        if ($this->left != null) {
+            $this->left->printPreOrder();
+        }
+        if ($this->right != null) {
+            $this->right->printPreOrder();
+        }
+    }
+
+    public function printPostOrder()
+    {
+        if ($this->left != null) {
+            $this->left->printPostOrder();
+        }
+        if ($this->right != null) {
+            $this->right->printPostOrder();
+        }
+        echo $this->data . "\n";
+    }
 }
 
 class BinaryTree
@@ -62,3 +95,8 @@ $root->addChildren($node2, $node3);
 $node2->addChildren($node4, $node5);
 $node3->addChildren($node6, null);
 $tree->print();
+
+// Tree traversal
+// $root->printInOrder();
+// $root->printPreOrder();
+// $root->printPostOrder();
