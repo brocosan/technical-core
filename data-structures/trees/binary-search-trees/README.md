@@ -1,7 +1,22 @@
 # Binary Search Trees
 ## Description
+Each node can have up to 2 children.
+A node can be defined by:
+- data
+- 2 pointers (left and right node)
+  
 The left subnode always contains values less than the parent node.  
-The right subnode always contains values greater than the parent node.  
+The right subnode always contains values greater than the parent node. 
+
+## Other types
+**Full Binary Trees (strict / proper)**  
+Each node have 0 or 2 nodes
+
+**Complete Binary Trees**  
+Every level is fully filled except for the last level. All nodes as left as possible.
+
+**Perfect Binary Tree**  
+Both full and complete. All leafs are at the same level and this level has the maximum number of nodes.
 
 ## Binary Tree Traversal
 Order to visit (print) nodes. The most common is in-order.
