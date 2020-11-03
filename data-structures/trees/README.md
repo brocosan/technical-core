@@ -12,8 +12,9 @@ Non-linear data structures composed of nodes
 ![Tree](https://res.cloudinary.com/practicaldev/image/fetch/s--od-naD9n--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/975/1%2APWJiwTxRdQy8A_Y0hAv5Eg.png)
 
 ## Types of trees
-- [Binary search tree](./binary-search-trees)
-- Balanced tree
-    - Red-black tree
-    - AVL tree
-- Trie
+- [Binary search trees](./binary-search-trees)
+- [Heaps](./heaps)
+- Balanced trees
+    - Red-black trees
+    - AVL trees
+- Tries
