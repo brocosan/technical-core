@@ -15,6 +15,7 @@ We use arrays to represent this data structure. Each element (node) can be acces
 Child indexes can be calculated with the parent index:
 - parent index x 2 + 1 = index of left child
 - parent index x 2 + 2 = index of right child
+- (index of element - 1) / 2 = parent index 
 
 ## Insert
 Note: for max heap  
