@@ -14,7 +14,7 @@ Non-linear data structures composed of nodes
 ## Types of trees
 - [Binary search trees](./binary-search-trees)
 - [Heaps](./heaps)
+- [Tries](./tries)
 - Balanced trees
     - Red-black trees
     - AVL trees
-- Tries
