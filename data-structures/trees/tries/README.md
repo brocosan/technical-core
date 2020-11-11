@@ -1,4 +1,4 @@
-# Heaps
+# Tries
 ## Description
 Type of tree. Each node stores a character.  
 Each path down the tree represents a word.  
