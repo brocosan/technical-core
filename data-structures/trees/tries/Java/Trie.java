@@ -1,10 +1,10 @@
 class Trie {
     private Node root;
-    
+
     public Trie() {
         root = new Node();
     }
-    
+
     void insert(String word) {
         int wordLength = word.length();
         Node currentNode = root;
@@ -30,20 +30,20 @@ class Trie {
         }
         return currentNode.isEnd;
     }
-    
+
     void print() {
         root.print("", 0, false);
     }
-    
+
     class Node {
         private Node[] children;
         private boolean isEnd;
-        
+
         public Node() {
             children = new Node[26];
             isEnd = false;
         }
-        
+
         void print(String word, int level, boolean sameLevel) {
             if (isEnd) {
                 System.out.println(word);
@@ -52,29 +52,19 @@ class Trie {
             for (int i = 0; i < 26; i++) {
                 if (children[i] != null) {
                     if (sameLevel && word.length() >= 1) {
-                        word = word.substring(0, word.length()-1);
+                        word = word.substring(0, word.length() - 1);
                     }
                     sameLevel = true;
-                    word = word + (char)(i + 'a');
-                    children[i].print(word, level+1, sameLevel);
+                    word = word + (char) (i + 'a');
+                    children[i].print(word, level + 1, sameLevel);
                 }
             }
         }
     }
-    
-    public static void main(String[ ] args) {
+
+    public static void main(String[] args) {
         Trie trie = new Trie();
-        String[] words = {
-            "car",
-            "card",
-            "cards",
-            "cot",
-            "cots",
-            "trie",
-            "tried",
-            "tries",
-            "try",
-        };
+        String[] words = { "car", "card", "cards", "cot", "cots", "trie", "tried", "tries", "try", };
         for (String word : words) {
             trie.insert(word);
         }
