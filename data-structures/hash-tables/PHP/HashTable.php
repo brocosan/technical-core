@@ -127,6 +127,6 @@ $hashTable->delete("unknown");
 foreach ($keys as $key) {
     $hashTable->delete($key);
     if ($hashTable->search($key)) {
-        var_dump('The key ['.$key.'] should not be deleted');
+        var_dump('The key ['.$key.'] should be deleted');
     }
 }
