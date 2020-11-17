@@ -9,3 +9,4 @@ Collection of data structures and algorithms in different languages.
 - [Stacks](./data-structures/stacks/)
 - [Queues](./data-structures/queues/)
 - [Trees](./data-structures/trees/)
+- [Hash tables](./data-structures/hash-tables/)
