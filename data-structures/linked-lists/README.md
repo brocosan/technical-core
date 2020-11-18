@@ -44,3 +44,8 @@ O(n)
 - value_n_from_end(n) - returns the value of the node at nth position from the end of the list
 - reverse() - reverses the list
 - delete_with_value(value) - removes the first item in the list with this value
+
+## Resources
+[[VIDEO] Explanation and implementation in Go (part 1)](https://www.youtube.com/watch?v=1S0_-VxPLJo)  
+[[VIDEO] Explanation and implementation in Go (part 1)](https://www.youtube.com/watch?v=8QoynPUY9_8)  
+[[VIDEO] Explanation and implementation in Java](https://www.youtube.com/watch?v=njTh_OwMljA)

@@ -28,3 +28,7 @@ O(n)
 - [PHP](./PHP)
 - [Go](./Go)
 - [Java](./Java)
+
+## Resources
+[[VIDEO] Explanation and implementation in Go](https://www.youtube.com/watch?v=fsbm1FOSDJ0)  
+[[VIDEO] Explanation and implementation in Java](https://www.youtube.com/watch?v=wjI1WNcIntg)
