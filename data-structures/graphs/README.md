@@ -8,13 +8,13 @@ The edges can also have weights associated to them. These could represent distan
 &nbsp;
 
 **Directed graph**  
-![Graph](https://i.imgur.com/RVluC6A.png)
+![Graph](https://i.imgur.com/RVluC6A.png)  
 The graph is **weighted** if a number (weight) is assigned to each edge.
 
 &nbsp;
 
 **Undirected graph**
-![Graph](https://i.imgur.com/xJxVSop.png)
+![Graph](https://i.imgur.com/xJxVSop.png)  
 In the example above, the set of vertices are (12, 2, 4, 18, 23) and the edges are (12-2, 12-4, 2-4, 4-18, 4-23, 18-23, 2-18).
 
 ## Representation
@@ -23,7 +23,7 @@ There are two common ways to represent a graph.
 This is the most common way.  
 Each vertex stores a list of edges that originate from that vertex.
 
-![list](https://i.imgur.com/i99VG02.png)
+![list](https://i.imgur.com/i99VG02.png)  
 For example, if vertex A has an edge to vertices B, C, and D, then vertex A would have a list containing 3 edges.  
 
 Finding an edge or weight between two vertices can be expensive because there is no random access to edges. You must traverse the adjacency lists until it is found.
@@ -31,7 +31,7 @@ Finding an edge or weight between two vertices can be expensive because there is
 ### Adjacency Matrix
 A matrix with rows and columns representing vertices stores a weight to indicate if vertices are connected and by what weight.
 
-![matrix](https://i.imgur.com/QBPDUrm.png)
+![matrix](https://i.imgur.com/QBPDUrm.png)  
 For example, if there is a directed edge of weight 5.6 from vertex A to vertex B, then the entry with row for vertex A and column for vertex B would have the value 5.6.
 
 Adding another vertex to the graph is expensive, because a new matrix structure must be created with enough space to hold the new row/column, and the existing structure must be copied into the new one.
