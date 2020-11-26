@@ -10,3 +10,4 @@ Collection of data structures and algorithms in different languages.
 - [Queues](./data-structures/queues/)
 - [Trees](./data-structures/trees/)
 - [Hash tables](./data-structures/hash-tables/)
+- [Graphs](./data-structures/graphs/)
