@@ -17,3 +17,4 @@ Collection of data structures and algorithms in different languages.
 - [Selection sort](./algorithms/selection-sort)
 - [Insertion sort](./algorithms/insertion-sort)
 - [Merge sort](./algorithms/merge-sort)
+- [Quick sort](./algorithms/quick-sort)
