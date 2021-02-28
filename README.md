@@ -12,6 +12,6 @@ Collection of data structures and algorithms in different languages.
 - [Hash tables](./data-structures/hash-tables/)
 - [Graphs](./data-structures/graphs/)
 
-
 ## Algorithms
 - [Bubble sort](./algorithms/bubble-sort)
+- [Selection sort](./algorithms/selection-sort)
