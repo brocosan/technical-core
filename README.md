@@ -15,3 +15,4 @@ Collection of data structures and algorithms in different languages.
 ## Algorithms
 - [Bubble sort](./algorithms/bubble-sort)
 - [Selection sort](./algorithms/selection-sort)
+- [Insertion sort](./algorithms/insertion-sort)
