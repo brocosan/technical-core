@@ -45,9 +45,9 @@ func merge(left, right []int) []int {
 
 func main() {
 	original := []int{11, 21, 12, -4, 3, 100, 1000, 1, 123}
-	sorted := []int{-4, 1, 3, 11, 12, 21, 100, 123, 1000}
-	merged := mergeSort(original)
-	if !reflect.DeepEqual(merged, sorted) {
-		fmt.Printf("got: %v, want: %v", original, sorted)
+	wanted := []int{-4, 1, 3, 11, 12, 21, 100, 123, 1000}
+	sorted := mergeSort(original)
+	if !reflect.DeepEqual(sorted, wanted) {
+		fmt.Printf("got: %v, want: %v", sorted, wanted)
 	}
 }
