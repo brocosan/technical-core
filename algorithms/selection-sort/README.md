@@ -5,7 +5,7 @@ Sorts data by looking for the smallest item in the list and placing it in the fr
 
 Similar to bubble sort, simple but inefficient.
 
-![Selection sort](https://i.imgur.com/9X43ZUB.gifv)
+![Selection sort](https://i.imgur.com/9X43ZUB.gif)
 
 ## Complexity
 Runtime: O(n^2)  
