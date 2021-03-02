@@ -2,7 +2,7 @@
 
 It sequentially checks each element of the list until a match is found or the whole list has been searched.
 
-In the worst case the target value is a the last position. This gives us a complexity of O(n).
+In the worst case the target value is at the last position. This gives us a complexity of O(n).
 
 ```go
 func linearSearch(arr []int, target int) int {
