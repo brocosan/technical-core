@@ -12,6 +12,8 @@ Collection of data structures and algorithms in different languages.
 - [Hash tables](./data-structures/hash-tables/)
 - [Graphs](./data-structures/graphs/)
 
+[6 basics data structures explained in one video [26:30]](https://www.youtube.com/watch?v=_9swtAph9jM)
+
 ## Algorithms
 - Sorting
     - [Bubble sort](./algorithms/bubble-sort)
