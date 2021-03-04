@@ -13,4 +13,15 @@ Collection of data structures and algorithms in different languages.
 - [Graphs](./data-structures/graphs/)
 
 ## Algorithms
-- [Graph search](./algorithms/graph-search/)
+- Sorting
+    - [Bubble sort](./algorithms/bubble-sort)
+    - [Selection sort](./algorithms/selection-sort)
+    - [Insertion sort](./algorithms/insertion-sort)
+    - [Merge sort](./algorithms/merge-sort)
+    - [Quick sort](./algorithms/quick-sort)
+- Searching
+    - [Linear search](./algorithms/linear-search)
+    - [Binary search](./algorithms/binary-search)
+- Graphs
+    - [Traversal](./algorithms/graphs/)
+        - [Breadth-First Search](./algorithms/graphs/breadth-first-search)
