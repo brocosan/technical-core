@@ -54,3 +54,7 @@ In the case of a *sparse* graph, where each vertex is connected to only a handfu
 - [PHP](./PHP)
 - [Go](./Go)
 - [Java](./Java)
+
+## Resources
+[Graph data structure and graph representation in Golang (Part 1 of 2)](https://www.youtube.com/watch?v=JDP1OVgoa0Q)
+[Graph data structure and graph representation in Golang (Part 2 of 2)](https://www.youtube.com/watch?v=bSZ57h7GN2w)
