@@ -1,13 +1,4 @@
-# Graph Search
-
-Way of exploring a graph.  
-
-## Applications
-- Web crawling
-- Social networking (e.g. find friends of friends)
-- Solving puzzles and games (e.g. Rubik's Cube)
-
-## Breadth-First Search (BFS)
+# Breadth-First Search (BFS)
 - Visit all the nodes reachable from a given node
 - O(V+E) time
 - Look at nodes reachable in 0 moves, 1 move, 2 moves, ...
@@ -15,7 +6,7 @@ Way of exploring a graph.
 
 In summary, we start at the root (or another selected node) and explore each neighbor before going on to any of their children.
 
-### Example of traversal
+## Example of traversal
 - Search the **current** location. If this is the destination, **stop searching**.
 - Search the **neighbors** of the current location. If any of them are the destination, **stop searching**.
 - Search all the **neighbors** of those locations. If any of them are the destination, **stop searching**.
@@ -37,12 +28,6 @@ while Q is non-empty
             mark n as visited
             put n into the queue
 ```
-
-## Depth-First Search (DFS)
-TODO
-
-## comparison between the two
-TODO
 
 ## Sources
 [[video] MIT course - Breadth-First Search](https://www.youtube.com/watch?v=s-CYnVz-uh4&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=13)  
