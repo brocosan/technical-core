@@ -1,6 +1,5 @@
 # Breadth-First Search (BFS)
 - Visit all the nodes reachable from a given node
-- O(V+E) time
 - Look at nodes reachable in 0 moves, 1 move, 2 moves, ...
 - Be careful to avoid duplicates (mark node as visited)
 
@@ -14,7 +13,7 @@ In summary, we start at the root (or another selected node) and explore each nei
 
 ![bfs](https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif)
 
-### Pseudocode
+## Pseudocode
 ```pseudocode
 v = root node
 create a queue Q (FIFO)
@@ -28,6 +27,16 @@ while Q is non-empty
             mark n as visited
             put n into the queue
 ```
+
+## Complexity
+Time: O(V+E) where V is the number of nodes and E is the number of edges.  
+Space: O(V)
+
+## Applications
+- Web crawling
+- Social networking (e.g. find friends of friends)
+- Solving puzzles and games (e.g. Rubik's Cube)
+- GPS navigation
 
 ## Sources
 [[video] MIT course - Breadth-First Search](https://www.youtube.com/watch?v=s-CYnVz-uh4&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=13)  
