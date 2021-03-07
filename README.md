@@ -24,5 +24,5 @@ Collection of data structures and algorithms in different languages.
     - [Binary search](./algorithms/binary-search)
 - Graphs
     - [Traversal](./algorithms/graphs/traversal)
-        - [Breadth-First Search](./algorithms/graphs/traversal/BFS)
-        - [Depth-First Search](./algorithms/graphs/traversal/DFS)
+        - [Breadth-First Search](./algorithms/graphs/traversal/BFS.md)
+        - [Depth-First Search](./algorithms/graphs/traversal/DFS.md)
